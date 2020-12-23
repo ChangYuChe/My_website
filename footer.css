@@ -1,0 +1,22 @@
+footer.background{
+    background-color:black;
+    width: auto;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer.background>.words{
+    color:white;
+    font-size: medium;
+}
+
+/*螢幕小於800像素設定*/
+@media (max-width:800px){
+    footer.background{
+        height: 60px;
+    }
+    footer.background>.words{
+        font-size: small;
+    }
+}

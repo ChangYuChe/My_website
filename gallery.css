@@ -1,0 +1,81 @@
+section.gallery{
+    display: flex;
+    justify-content: center;
+    padding: 40px 0px;
+}
+section.gallery>.column{
+    width: 450px;
+    margin: 20px;
+}
+/*section.gallery>.column>.picture*/
+section.gallery>.column>.picture{
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    color: white;
+}
+section.gallery>.column>.picture-1{
+    background-image: url(bikini-1.jpg);
+    background-size: cover;
+}
+section.gallery>.column>.picture-2{
+    background-image: url(bikini-2.jpg);
+    background-size: cover;
+}
+/*secton.gallery>.column.>text*/
+section.gallery>.column>.text{
+    box-sizing: border-box;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    color: black;
+    border: 4px solid black;
+    line-height: 0.9em;
+}
+/*section.gallery>.column>.block*/
+section.gallery>.column>.block{
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section.gallery>.column>.block>.words{
+    width: 100%;
+}
+section.gallery>.column>.block>.words>.title{
+    font-family: 'Great Vibes', cursive;
+    font-size: 2em;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+section.gallery>.column>.block>.words>.story{
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+section.gallery>.column>.block>.words>.action>.btn{
+    font-size: 0.8em;
+    color: white;
+    border: 1px solid white;
+    background-color: rgba(128, 120, 120, 0.5);
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+section.gallery>.column>.block>.words>.action>.btn:hover{
+    background-color: black;
+}
+
+/*螢幕小於800像素設定*/
+@media (max-width:800px){
+    section.gallery{
+        flex-wrap: wrap;
+    }
+    section.gallery>.column{
+        width: 90%;
+        margin: 20px 0px;
+    }
+    section.gallery>.column:last-child{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}

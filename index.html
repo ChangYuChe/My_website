@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <title>Fashion Diary</title>
+        <link rel="stylesheet" type="text/css" href="nav.css" />
+        <link rel="stylesheet" type="text/css" href="gallery.css" />
+        <link rel="stylesheet" type="text/css" href="comment.css" />
+        <link rel="stylesheet" type="text/css" href="footer.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+    </head>
+    <body>
+        <nav>
+            <div class="title">Fashion Diary</div>
+            <div class="menu">
+                <div class="item">Home</div>
+                <div class="item">About</div>
+                <div class="item">Blog</div>
+                <div class="item">Contact</div>
+            </div>
+            <div id="mobile-menu" class="mobile-menu">
+                <div class="item">
+                    <span class="pointer">Home</span>
+                </div>
+                <div class="item">
+                    <span class="pointer">About</span>
+                </div>
+                <div class="item">
+                    <span class="pointer">Blog</span>
+                </div>
+                <div class="item">
+                    <span class="pointer">Contact</span>
+                </div>
+                <div onclick="closeMobileMenu()" class="close">X</div>
+            </div>
+            <div onclick="showMobileMenu()" class="mobile-menu-trigger">
+                <div class="lines">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="memo">
+                GIRL IS THE<br />CHOICE.<br />MAKE YOURS.
+            </div>
+        </nav>
+        <section class="gallery">
+            <div class="column">
+                <div class="block picture picture-1">
+                    <div class="words">
+                        <div class="title">Read</div>
+                        <div class="story">The Blog</div>
+                        <div class="action">
+                            <span class="btn">Read More</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="block text">
+                    <div class="words">
+                        <div class="title">Hello</div>
+                        <div class="story">I'm Mars.</div>
+                        <div class="action">
+                            <span class="btn">Read More</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="block text">
+                    <div class="words">
+                        <div class="title">Advertise with</div>
+                        <div class="story">Fashion Diva</div>
+                        <div class="action">
+                            <span class="btn">Read More</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="block picture picture-2">
+                    <div class="words">
+                        <div class="title">Contribute</div>
+                        <div class="story">To Date Blog</div>
+                        <div class="action">
+                            <span class="btn">Read More</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="comment">
+            <div class="col">
+                <div id="picture3" onmouseover="OpacityUnset3()" onmouseout="OpacitySet3()" class="block picture-3"></div>
+                <div class="block">
+                    <div class="titletext">If you love a girl, just go and let her know.</div>
+                    <div class="description">
+                        Once a year, pandas can mate. Panda females can get pregnant for only 2 or 3 days. This makes getting pregnant difficult. Two pandas are in a zoo in Vienna, Austria. They mate a few times. This is special.
+                    </div>
+                    <hr class="hrindex"/>
+                    <div class="feedback">
+                        <div class="feedbacktext">85views</div>
+                        <div class="feedbacktext">Write a comment</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div id="picture4" onmouseover="OpacityUnset4()" onmouseout="OpacitySet4()" class="block picture-4"></div>
+                <div class="block">
+                    <div class="titletext">Not matter how hard, I will try again and again.</div>
+                    <div class="description">
+                        Libraries in Japan use special machines. The machines sterilize books. When you sterilize, you make something clean and safe. How does the machine work? People put a book inside. They close the door of the machine. The machine moves the pages. 
+                    </div>
+                    <hr class="hrindex"/>
+                    <div class="feedback">
+                        <div class="feedbacktext">85views</div>
+                        <div class="feedbacktext">Write a comment</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="background">
+            <div class="words">@ 2020/12 by Mars. All rights reserved.</div>
+        </footer>
+        <script src="main.js"></script>
+    </body>
+</html>
